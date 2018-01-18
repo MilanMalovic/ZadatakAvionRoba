@@ -30,8 +30,12 @@ public class Roba {
  public static final String POLJE_OPIS = "opis";
  public static final String POLJE_TEZINA = "tezina";
 
+
+
+
     public Roba() {
     }
+
 
     public Roba(String naziv, String opis, double tezina) {
         this.naziv = naziv;
@@ -61,6 +65,14 @@ public class Roba {
 
     public void setTezina(double tezina) {
         this.tezina = tezina;
+    }
+
+    public Avion getAvion() {
+        return avion;
+    }
+
+    public void setAvion(Avion avion) {
+        this.avion = avion;
     }
 
     @Override

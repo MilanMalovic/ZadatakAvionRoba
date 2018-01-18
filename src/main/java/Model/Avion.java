@@ -28,7 +28,7 @@ public static final String POLJE_RASPONKRILA = "rasponKrila";
     private int rasponKrila;
 
 
-    @ForeignCollectionField(foreignFieldName = "roba")
+    @ForeignCollectionField(foreignFieldName = "avion", eager = false, maxEagerLevel = 1)
     private ForeignCollection<Roba> roba;
 
 
@@ -36,7 +36,7 @@ public static final String POLJE_RASPONKRILA = "rasponKrila";
     public Avion() {
     }
 
-    public Avion(int id, String oznaka, int rasponKrila) {
+    public Avion(String oznaka, int rasponKrila) {
         this.id = id;
         this.oznaka = oznaka;
         this.rasponKrila = rasponKrila;
